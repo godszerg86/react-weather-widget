@@ -23,7 +23,7 @@ class SearchBar extends Component {
   predictSearch = (event) => {
     this.setState({value: event.target.value});
     if (event.target.value.trim().length >= 2) {
-      fetch(`http://www.mapquestapi.com/search/v3/prediction?key=${this.props.mapQuestApiKey}&limit=5&collection=adminArea,airport&q=${event.target.value.trim()}`)
+      fetch(`https://www.mapquestapi.com/search/v3/prediction?key=${this.props.mapQuestApiKey}&limit=5&collection=adminArea,airport&q=${event.target.value.trim()}`)
         .then(response => response.json())
         .then(this.handlePredict)
     } else {

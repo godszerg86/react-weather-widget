@@ -45,7 +45,7 @@ class WeatherWidget extends Component {
       localhost = `https://cors-anywhere.herokuapp.com/`;
     }
     if (!search) {
-      fetch(`http://www.mapquestapi.com/geocoding/v1/reverse?key=${this.props.mapQuestApiKey}&location=${lat},${lon}`)
+      fetch(`https://www.mapquestapi.com/geocoding/v1/reverse?key=${this.props.mapQuestApiKey}&location=${lat},${lon}`)
         .then(response => response.json())
         .then(data => this.getCityImg(data.results[0].locations[0].adminArea5, data.results[0].locations[0].adminArea3))
     } else {
@@ -124,7 +124,7 @@ class WeatherWidget extends Component {
     return (
       <React.Fragment>
         <link
-          href='http://fonts.googleapis.com/css?family=Roboto:400,100,300'
+          href='https://fonts.googleapis.com/css?family=Roboto:400,100,300'
           rel='stylesheet'
           type='text/css'/>
         <div className="w-widget-widget-block">

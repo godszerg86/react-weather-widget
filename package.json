@@ -9,8 +9,7 @@
     "transpile": "babel src -d dist --copy-files",
     "prepublishOnly": "npm run transpile",
     "build": "webpack --mode production",
-    "gh-demo": "git add docs/* && git commit -m \"update demo page\" && git push && echo \"https://godszerg86.github.io/react-weather-widget/\"",
-    "commit": "git add . && git commit"
+    "gh-demo": "git add docs/* && git commit -m \"update demo page\" && git push && echo \"https://godszerg86.github.io/react-weather-widget/\""
   },
   "keywords": [
     "react-weather-widget",

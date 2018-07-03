@@ -1,5 +1,6 @@
 # React weather widget
 
+## Still in development, do not download =(
 A react component displaying local weather with functionality to search for city or airport and display weather.  
 *P.S. This is my first npm package and deployed react component, so do not judge strictly ;)*
 
